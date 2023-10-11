@@ -1,0 +1,231 @@
+
+* {
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	 list-style: none;
+	  margin: 0;
+	  padding: 0;
+ }
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100vh;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: 1s ease-in;
+}
+
+
+h2,
+h3,
+a {
+	color: #34495e;
+	
+}
+
+a {
+	text-decoration: none;
+	
+}
+ul li a:hover{
+	color: #DC2C74;
+}
+
+.logo a{
+	color: #34495e;
+}
+
+.logo {
+	margin: 0;
+	font-size: 1.45em;
+	 
+}
+
+#main-nav {
+	margin-top: 5px;
+
+}
+
+.header {
+	margin-top: 0px;
+	width: 100%;
+	position: fixed;
+	/* overflow: hidden; */
+	z-index: 10;
+}
+
+
+.logo a,
+#main-nav   a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+	text-decoration: none;
+	 font-weight: bold;
+	 
+}
+#main-nav li a:hover{
+	color: #DC2C74;
+}
+
+#main-nav a  { 
+	
+	color: #34495e;
+	font-size: .99em;
+}
+
+  #icon{
+	font-size: 22px;
+  }
+
+
+
+.header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border: 1px solid #a2a2a2;
+	background-color: #f4f4f4;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+/* // background image  */
+.bg-img{
+	display: flex;
+	align-items: center;
+
+	background-image: url('greeting-card.jpg');
+	height:80vh;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position:right;
+	background-size: cover;
+	 position: static;
+	  
+}
+
+.content{
+	max-width: 570px;
+	padding: 10px;
+	text-align: center;
+	margin: auto;
+	 margin-right:  100px;
+	justify-content:flex-end;
+
+}
+.content p{
+	 font-size: 20px;
+	 color: black;
+
+}
+.content span{
+	color: #DC2C74;
+	font-size: 35px  ;
+	font-weight: bold;	
+	 
+}
+.content h2{
+	font-size: 48px;
+	color: #493c42;
+	font-weight: bold;
+
+
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+
+
+@media (min-width: 769px) {
+	.header,
+	#main-nav {
+		display: flex;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+    	.header{
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+	}
+	 
+
+}
+
+ 
+/* // media query for text on cover of image start */
+
+@media screen and (max-width: 768px) {
+	.content p{
+	  font-size: 16px; /* Adjust font size for mobile screens */
+	    
+	}
+	.content h2{
+		font-size: 32px;
+	}
+	.content span{
+		font-size: 23px;
+	}
+	.content{
+		position: absolute;
+  	left: 108px;
+  	top: 410px;
+	}
+  }
+  @media screen and (max-width: 450px) {
+   
+	.content h2 {
+		font-size: 30px;
+	  }
+	  .content span {
+		font-size: 20px;
+		 
+	  }
+	  .content p{
+		font-size: 16px; /* Adjust font size for mobile screens */
+		  
+	  }
+	  .bg-img{
+		height: 420px;
+	  }
+	 .content{
+	max-width: 1000px;
+	 }	
+	 @media screen and (max-width: 400px){
+.content p{
+	font-size: 16px;
+}
+.content h2{
+	font-size: 27px;
+}
+.content span {
+	font-size: 17px;
+	 
+  }
+	 }
+}
+/* // media query for text on cover of image end */
+ 
+
+@media (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
