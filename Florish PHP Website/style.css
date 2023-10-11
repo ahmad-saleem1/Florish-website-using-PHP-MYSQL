@@ -168,44 +168,48 @@ ul li a:hover{
 }
 
  
-/* // media query for text on cover of image start */
+/* // media query for text on the cover of image start */
+
 
 @media screen and (max-width: 768px) {
 	.content p{
-	  font-size: 16px; /* Adjust font size for mobile screens */
+	  font-size: 18px; /* Adjust font size for mobile screens */
 	    
 	}
 	.content h2{
-		font-size: 32px;
+		font-size: 35px;
 	}
 	.content span{
-		font-size: 23px;
+		font-size: 25px;
 	}
-	.content{
-		position: absolute;
-  	left: 108px;
-  	top: 410px;
-	}
+	 .content{
+		position: relative;
+		left: 45px;
+	 }
+	 
   }
   @media screen and (max-width: 450px) {
    
 	.content h2 {
-		font-size: 30px;
+		font-size: 33px;
 	  }
 	  .content span {
-		font-size: 20px;
+		font-size: 24px;
 		 
 	  }
 	  .content p{
-		font-size: 16px; /* Adjust font size for mobile screens */
+		font-size: 18px; /* Adjust font size for mobile screens */
 		  
 	  }
 	  .bg-img{
 		height: 420px;
+
 	  }
 	 .content{
 	max-width: 1000px;
 	 }	
+
+	 
 	 @media screen and (max-width: 400px){
 .content p{
 	font-size: 16px;
@@ -217,11 +221,15 @@ ul li a:hover{
 	font-size: 17px;
 	 
   }
+
+  .contactForm{
+	width: 600px;
+	 
+	 
+}
 	 }
 }
-/* // media query for text on cover of image end */
- 
-
+/* // media query for text on the cover of image end */
 @media (min-width: 1025px) {
 	.header {
 		flex-direction: row;
